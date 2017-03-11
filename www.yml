@@ -1,0 +1,11 @@
+---
+#www.yml : playbook for web servers lampp
+- hosts: www
+  remote_user: vagrant
+  sudo: yes
+  roles:
+   - nginx
+   - apache
+   - mysql
+   - php
+
